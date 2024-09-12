@@ -1,12 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>nav bar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+            /* border: 1px solid red; */
+        }
+       
+
+        .nav_bar {
+            background-color: black;
+            height: 10vh;
+            /* border-radius: 10px; */
+            color: white;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            right: 300px;
+            /* border: 2px solid red; */
+        }
+
+        #margin {
+            font-size: 40px;
+        }
+
+        .nav_list ul li {
+            position: relative;
+            right: 10px;
+        }
+
+        .nav_list li a {
+            color: white;
+            display: flex;
+            font-size: 1.5rem;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .nav_list li a:hover {
+            border-bottom: 5px #ff34ff;
+            transform: rotate(20deg);
+            font-size: 30px;
+            border-bottom: 4px solid rgba(255, 255, 0, 0.651);
+          
+        }
+
+        .nav_list ul {
+            display: flex;
+            gap: 10%;
+            position: relative;
+            right: 5px;
+        }
+
+        input {
+            padding: 1rem 1rem 1rem 2rem;
+            text-align: center;
+            border: none;
+        }
+
+        .box {
+            height: 200px;
+            width: 25%;
+            border: 2px solid black;
+            padding: 5px;
+            overflow: auto;/*in clearfix only use of  OVERFLOW:AUTO and inside the image use that have to write float right
+            then the clearfix uses*/
+            margin-left: 30px;
+            border: none;
+            margin: 20px;
+
+
+        }
+
+        .img2 {
+            float: right;
+        }
+        .hero{
+            margin: 10px;
+        }
+
+        @media screen and (max-width:780px) {
+            .nav_bar {
+                margin: 0;
+                display: flex;
+                justify-content: space-between;
+
+            }
+            .nav_list ul{
+                position: relative;
+                left: 20px;
+                top: 14px;
+            }
+            .nav_list ul li{
+                position: relative;
+                left: 80px;
+            }
+
+            .nav_list ul li a {
+                gap: 0%;
+                font-size: 20px;
+            }
+
+            span {
+                display: none;
+            }
+
+            input {
+                padding: 0;
+                width: 3vw;
+                text-align: center;
+                position: absolute;
+    
+                bottom: 20px;
+                transition: all 1s ease-in-out;
+            }
+
+            input:hover {
+                width: 100px;
+                border: none;
+            }
+            .box {
+            height: 200px;
+            width: 25%;
+            /* border: 2px solid black; */
+            padding: 5px;
+            overflow: auto;
+            margin-left: 20px;
+            border: none;
+            margin:20px;
+
+
+        }
+        .img2{
+            height: 100px;
+            width: 100px;
+        }
+        .hero{
+            text-align: center;
+        }
+        }
+    </style>
 </head>
+
 <body>
-    <script src="first.js"></script>
+    <div class="nav_bar">
+        <span id="margin">RANJAN</span>
+        <div class="nav_list">
+            <ul>
+                <input type="search" placeholder="search">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="hero">
+        <h2>IT USE OF CLEARFIX IN CSS</h2>
+
+        <div class="box">
+            <img class="img2" src="img1.webp" alt="" width="200px" height="200px">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam temporibus odio nisi sit! Rerum laborum neque
+            saepe molestias eveniet voluptatum sit veniam aperiam dolor possimus amet consequatur, commodi nemo
+            excepturi?
+        </div>
+        <h2>IT USE OF CLEARFIX IN CSS</h2>
+        <div class="box">
+            <img class="img2" src="image.png" alt="" width="200px" height="200px">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam temporibus odio nisi sit! Rerum laborum neque
+            saepe molestias eveniet voluptatum sit veniam aperiam dolor possimus amet consequatur, commodi nemo
+            excepturi?
+        </div>
+        <h2>IT USE OF CLEARFIX IN CSS</h2>
+        <div class="box">
+            <img class="img2" src="img1.webp" alt="" width="200px" height="200px">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam temporibus odio nisi sit! Rerum laborum neque
+            saepe molestias eveniet voluptatum sit veniam aperiam dolor possimus amet consequatur, commodi nemo
+            excepturi?
+        </div>
+        <h2>IT USE OF CLEARFIX IN CSS</h2>
+        <div class="box">
+            <img class="img2" src="image.png" alt="" width="200px" height="200px">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam temporibus odio nisi sit! Rerum laborum neque
+            saepe molestias eveniet voluptatum sit veniam aperiam dolor possimus amet consequatur, commodi nemo
+            excepturi?
+        </div>
+    </div>
 </body>
 
 </html>
