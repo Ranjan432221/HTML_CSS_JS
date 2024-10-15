@@ -1,0 +1,15 @@
+#we{
+    height: 200px;
+    width: 200px;
+    border: 20px solid blue;
+    border-left:  20px solid black;
+    border-radius: 50%;
+    margin-left: 200px;
+    /* animation-duration: 1s; */
+    /* animation-timing-function: 2s; */
+    animation: spinAnimation 1s steps(60) 0s infinite normal;
+}
+@keyframes spinAnimation {
+  from {transform: rotate(0deg);}
+  to{transform: rotate(360deg);}
+}

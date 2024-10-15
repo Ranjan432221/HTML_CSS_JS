@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav{
+    background-color: blue;
+    height: 80px;
+    width: 100%;
+    font-weight: 700;
+}
+.box{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0px 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+    line-height: 80px;
+    
+}
+nav ul li{
+    display:inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+/* nav ul li a{
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+} */
+/* a.active,a:hover{
+    background-color: #1b9bff;
+    transition: 5s;
+} */
