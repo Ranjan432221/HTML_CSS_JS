@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after pseudo selector</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: aliceblue;
+        }
+        section{
+            height: 344px;
+            margin: 3px 23px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* border: 2px solid red; */
+            justify-content: center;
+        }
+        section::before{
+            content: "this is a content";
+        }
+        li{
+            list-style: none;
+            padding: 34px 23px;
+        }
+        .navigation{
+            font-size: 20px;
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">home</li>
+                <li class="item">about</li>
+                <li class="item">service</li>
+                <li class="item">contact</li>
+            </ul>
+        </nav>
+        <section>
+            <h3>welcome to coding world</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum dicta, fugit animi voluptatibus doloremque
+                tempore corrupti consectetur non asperiores quibusdam, consequatur mollitia perspiciatis corporis
+                molestias reprehenderit, nobis nisi iusto. Magni.
+                Ipsa dicta expedita tenetur repellendus at repellat suscipit hic corrupti pariatur, consequatur nam fuga
+                magni illo id rerum. Expedita minima dicta alias, sit rem culpa exercitationem maiores at necessitatibus
+                iste?
+                Aperiam, architecto harum? Quia provident iusto atque temporibus sapiente quo, quod illo aperiam tempore
+                assumenda iure? Laborum omnis dolores facere facilis nostrum hic? Nulla, cupiditate. Esse quaerat aut
+                aspernatur obcaecati.</p>
+        </section>
+    </header>
+</body>
+
+</html>

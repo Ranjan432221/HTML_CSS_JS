@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    
+}
+.box1{
+    height: 80px;
+    width: 30%;
+    border: 2px solid rgb(15, 14, 14);
+    background-color: orangered;
+    padding: 23px 20px;
+    box-shadow: 5px 3px green;
+}
+.box2{
+    height: 80px;
+    width: 30%;
+    border: 2px solid rgb(12, 11, 11);
+    background-color: orangered;
+    padding: 23px 20px;
+}
+
+.box3{
+    height: 80px;
+    width: 30%;
+    border: 2px solid rgb(6, 6, 6);
+    background-color: orangered;
+    padding: 23px 20px;
+
+}

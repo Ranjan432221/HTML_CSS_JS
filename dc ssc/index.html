@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<style>
+div > p{
+    /*this selector symbol only use on recently inside the div then css will be applied*/
+    color:yellow;
+    background-color: green;
+    font-weight:bold;
+}
+div + p{
+    /* if p is right after p i.e p is next sibling of p */
+    color:white;
+    background-color: red;
+}
+</style>
+
+<body>
+    <!-- <div class="container">
+        <div class="box1">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam dolores velit ex rerum fugiat quae,
+                neque, doloribus, placeat perspiciatis repudiandae blanditiis sequi eum quam? Est tenetur minima hic
+                eius illum?</p>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="box2">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque illo id illum cupiditate repellendus
+                similique animi rerum! Ea molestias neque doloremque dolorem quod veniam! Laudantium quo eveniet eaque
+                animi perspiciatis?</p>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="box3">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem debitis enim eum. Nostrum aperiam, id
+                nisi consequuntur sed labore perspiciatis inventore non possimus doloremque suscipit libero corporis
+                velit recusandae aut.</p>
+        </div>
+    </div> -->
+   <h2> h2 this is more on selector </h2>
+    <div class="container">
+        <div class="row">
+        <ul>
+            <li class="item"><p>this is another paragraph inside it</p></li>
+            <li>this will not get affected</li>
+            <p>this is a para inside ul</p>
+        </ul>
+        <p>this is paragraph</p>
+        </div>
+        <p>this is another paragraph</p>
+    </div>
+</body>
+
+</html>

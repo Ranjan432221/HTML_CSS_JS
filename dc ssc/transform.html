@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this is transform in css</title>
+    <style>
+        .container {
+            height: 80vh;
+            background-color: burlywood;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: brown;
+            border: 2px solid black;
+            border-radius: 8px;
+            height: 400px;
+            width: 400px;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .box:hover {
+            /* transform: rotate(45deg); */
+            /* transform: skew(40deg); */
+            /* transform: scale(2); */
+            /* transform: translatex(123px); */
+            /* transform: translatey(123px); */
+            transform: rotate(20deg);
+        } 
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            it is a transform in css
+        </div>
+    </div>
+</body>
+
+</html>
